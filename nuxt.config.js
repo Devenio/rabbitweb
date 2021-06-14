@@ -17,6 +17,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    "~/assets/style.css"
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -58,9 +59,4 @@ export default {
     },
     component: "fa"
   },
-
-  tailwindcss: {
-    jit: true
-    // mode: "jit"
-  }
 }

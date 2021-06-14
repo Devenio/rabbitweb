@@ -1,0 +1,12 @@
+@font-face {
+  font-family: IRANSansWeb;
+  src: url(./fonts/IRANSansWeb.ttf);
+}
+* {
+  font-family: IRANSansWeb;
+  transition: all 300ms;
+  outline: none !important;
+}
+.nuxt-link-exact-active {
+  border: 1px solid #fff;
+}
