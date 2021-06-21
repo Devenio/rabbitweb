@@ -174,21 +174,67 @@
         </h3>
         <div class="h-[3px] w-[70px] bg-blue-600 mx-5 mt-3"></div>
       </div>
-      <div class="flex items-center overflow-x-auto justify-center mt-5 py-5">
-        <comment class="transform rotate-3" />
-        <comment class="transform -rotate-3" />
-        <comment class="transform rotate-3" />
-        <comment class="transform -rotate-3" />
+      <div v-swiper="swiperOption" class="mt-10">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <comment />
+          </div>
+          <div class="swiper-slide">
+            <comment />
+          </div>
+          <div class="swiper-slide">
+            <comment />
+          </div>
+          <div class="swiper-slide">
+            <comment />
+          </div>
+          <div class="swiper-slide">
+            <comment />
+          </div>
+          <div class="swiper-pagination" slot="pagination"></div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import { directive } from "vue-awesome-swiper";
+
+export default {
+  directives: {
+    swiper: directive
+  },
+  data() {
+    return {
+      swiperOption: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        },
+        breakpoints: {
+          1536: {
+            slidesPerView: 3,
+            spaceBetween: 40
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20
+          },
+          280: {
+            slidesPerView: 1,
+            spaceBetween: 10
+          }
+        }
+      }
+    };
+  }
+};
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .bg-pic {
   background-image: url("/img/bg.jpg");
   background-size: cover;
