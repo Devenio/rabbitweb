@@ -54,7 +54,6 @@ export default {
   mounted() {
     const header = document.querySelector("#header");
     window.addEventListener("scroll", e => {
-      console.log(window.scrollY);
       let scrollY = window.scrollY || window.scrollTop || document.scrollTop;
       scrollY > 150
         ? header.classList.add("scroll-pos")

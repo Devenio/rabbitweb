@@ -41,11 +41,14 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    ['@nuxtjs/localtunnel', { subdomain: 'nimashahbazi' }]
+    ['@nuxtjs/localtunnel', { subdomain: 'nimashahbazi' }],
+    'vue-sweetalert2/nuxt'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    baseURL: "http://api.rabbitweb.ir/Service/"
+  },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},

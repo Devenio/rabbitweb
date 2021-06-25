@@ -125,10 +125,14 @@
       <div
         class="container lg:w-[1024px] mx-auto flex flex-wrap justify-center items-center"
       >
-        <work-samp class="lg:w-[600px]" />
-        <work-samp class="lg:w-[300px]" />
-        <work-samp class="lg:w-[300px]" />
-        <work-samp class="lg:w-[600px]" />
+        <work-samp
+          class="lg:w-[450px]"
+          v-for="sample in samples"
+          :key="sample.id"
+          :name="sample.name"
+          :link="sample.link"
+          :desc="sample.description"
+        />
       </div>
       <div class="flex justify-center w-full">
         <button class="mt-5 py-3 px-5 bg-blue-600 text-white rounded-lg">
@@ -195,6 +199,76 @@
         </div>
       </div>
     </div>
+    <div class="container mx-auto px-5">
+      <h3 class="text-2xl font-bold lg:text-3xl">
+        ثبت سفارش
+      </h3>
+      <div class="h-[3px] w-[70px] bg-blue-600 mt-3"></div>
+    </div>
+    <div class="container mx-auto px-5 mt-8 pb-10">
+      <div class="w-full mb-2">
+        <div class="flex flex-col justify-center">
+          <div>نام :</div>
+          <input
+            type="text"
+            placeholder="نام خود را وارد کنید"
+            class="px-5 mt-2 w-full border rounded py-2 text-gray-700 focus:outline-none items-center"
+            v-model="name"
+          />
+        </div>
+      </div>
+      <div class="w-full mb-2">
+        <div class="flex flex-col justify-center">
+          <div>
+            شماره تلفن
+            <span class="text-red-500">*</span>
+            :
+          </div>
+          <input
+            type="text"
+            placeholder="مثال: 09215555555"
+            class="px-5 mt-2 w-full border rounded py-2 text-gray-700 focus:outline-none"
+            v-model="PhoneNumber"
+          />
+        </div>
+      </div>
+      <div class="w-full mb-2 justify-center">
+        <div class="flex flex-col items-start">
+          <div>
+            زمینه کاری
+            <span class="text-red-500">*</span>
+            :
+          </div>
+          <input
+            type="text"
+            placeholder="مثال: حوزه کشاورزی، ورزشی، ..."
+            class="px-5 mt-2 w-full border rounded py-2 text-gray-700 focus:outline-none"
+            v-model="workField"
+          />
+        </div>
+      </div>
+      <div class="w-full mb-2 justify-center">
+        <div class="">
+          <div>
+            توضیحات
+            <span class="text-red-500">*</span>
+            :
+          </div>
+          <textarea
+            type="text"
+            placeholder=""
+            class="px-5 mt-2 w-full border rounded py-2 text-gray-700 max-h-[300px] focus:outline-none"
+            v-model="description"
+          ></textarea>
+        </div>
+      </div>
+      <button
+        @click="sendDemand()"
+        class="w-full mt-6 py-2 rounded bg-blue-500 text-gray-100 focus:outline-none"
+      >
+        ارسال
+      </button>
+    </div>
   </div>
 </template>
 
@@ -228,13 +302,60 @@ export default {
             spaceBetween: 10
           }
         }
-      }
+      },
+      name: "",
+      description: "",
+      PhoneNumber: "",
+      workField: ""
     };
+  },
+  async asyncData({ $axios }) {
+    const { data } = await $axios.get("/Samples/");
+    console.log(data);
+    return {
+      samples: data
+    };
+  },
+  mounted() {},
+  methods: {
+    sendDemand() {
+      console.log(this.description, this.PhoneNumber, this.workField);
+      if (!this.description || !this.PhoneNumber || !this.workField) {
+        this.$swal({
+          text: "لطفا تمام فیلدهای ستاره دار رو پر کنید",
+          icon: "error"
+        });
+      } else {
+        this.$axios
+          .post("/Demand/", {
+            name: this.name,
+            description: this.description,
+            PhoneNumber: this.PhoneNumber,
+            workField: this.workField
+          })
+          .then(res => {
+            console.log(res);
+            this.$swal({
+              text:
+                "درخواست شما با موفقیت ثبت شد \nدر کوتاه ترین زمان با شما تماس میگیریم",
+              icon: "success"
+            });
+            this.description = this.PhoneNumber = this.workField = "";
+          })
+          .catch(err => {
+            console.log(err);
+            this.$swal({
+              text: "مشکلی در سیستم به وجود آمده. لطفا بعدا دوباره امتحان کنید",
+              icon: "error"
+            });
+          });
+      }
+    }
   }
 };
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .bg-pic {
   background-image: url("/img/bg.jpg");
   background-size: cover;
