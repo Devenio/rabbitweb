@@ -14,13 +14,14 @@
         <div
           class="flex items-center w-full justify-center mt-5 lg:mt-10 relative z-50"
         >
-          <button
-            class="ml-3 py-2 px-5 lg:text-xl cursor-pointer bg-white text-blue-600"
+          <nuxt-link
+            to="/work-samples"
+            class="ml-3 py-3 px-5 rounded-sm lg:text-xl cursor-pointer bg-white text-blue-600"
           >
             مشاهده نمونه کارها
-          </button>
+          </nuxt-link>
           <button
-            class="ml-3 py-2 px-5 lg:text-xl cursor-pointer bg-blue-600 text-white"
+            class="ml-3 py-3 px-5 rounded-sm lg:text-xl cursor-pointer bg-blue-600 hover:bg-blue-700 text-white"
           >
             ارتباط با ما
           </button>
@@ -33,7 +34,7 @@
       <img
         src="/img/group2.png"
         alt=""
-        class="absolute z-0 bottom-0 hidden lg:block"
+        class="absolute z-0 -bottom-1 hidden lg:block"
         style="right: -150px;"
       />
       <img
@@ -44,33 +45,38 @@
       />
     </div>
     <div
-      class="rounded-lg bg-white flex flex-col lg:flex-row items-center mx-auto -mt-5 lg:-mt-16 shadow-lg relative z-10"
+      class="rounded-lg overflow-hidden bg-white lg:h-[300px] flex flex-col lg:flex-row items-center mx-auto -mt-5 lg:-mt-16 shadow-lg relative z-10"
       id="q-box"
     >
       <div
-        class="flex items-center justify-center bg-blue-100 p-5 w-full lg:h-full"
+        class="flex items-center justify-center bg-blue-100 w-full py-5 lg:w-1/2 lg:h-full"
       >
-        <img src="/img/logo.png" alt="logo" class="" style="width: 100px;" />
+        <img src="/img/logo.png" alt="logo" class="w-[100px]" />
       </div>
       <div class="p-5 text-center lg:text-right">
         <h2 class="font-bold text-lg">
           چرا برای کسب و کار خود به یک وب سایت احتیاج دارید؟
         </h2>
         <p class="opacity-75 mt-3">
-          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
-          از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
-          سطرآنچنان که لازم است و
+          + طراحی وبسایت و وب اپلیکیشن ، بدون محدودیت ! <br />
+          + پیاده سازی قراردادهای هوشمند بر بستر شبکه های بلاکچین<br />
+          + تولید محتوا در زمینه های مختلف<br />
+          + بهینه سازی سئو بر اساس آخرین الگوریتم های گوگل<br />
+          + ...
         </p>
-        <div class="text-blue-900 mt-5 font-bold underline cursor-pointer">
+        <nuxt-link
+          to="/demand"
+          class="text-blue-900 mt-3 font-bold underline cursor-pointer"
+        >
           همین الان شروع کنیم
           <fa :icon="['fas', 'angle-left']" />
-        </div>
+        </nuxt-link>
       </div>
     </div>
     <div
       class="container mx-auto flex flex-col lg:flex-row-reverse items-center mt-16"
     >
-      <img src="/img/group1.svg" alt="" class="px-5" />
+      <img src="/img/group1.svg" alt="" id="group1" class="px-5" />
       <div class="mt-10 lg:mt-0 text-center lg:text-right">
         <h1 class="text-4xl font-bold">
           چرا ربیت وب ؟
@@ -84,11 +90,13 @@
           نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان
           خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد
         </p>
-        <button
-          class="py-3 px-10 bg-blue-600 text-white mt-10 lg:mt-16 rounded-lg"
-        >
-          چطوری سفارش بدیم ؟
-        </button>
+        <nuxt-link to="/demand/">
+          <button
+            class="py-3 px-10 bg-blue-600 text-white mt-10 lg:mt-16 rounded-lg"
+          >
+            چطوری سفارش بدیم ؟
+          </button>
+        </nuxt-link>
       </div>
     </div>
     <div class="mt-16 bg-pic2 p-10">
@@ -115,7 +123,7 @@
         </span>
       </div>
     </div>
-    <div class="container mx-auto">
+    <!-- <div class="container mx-auto">
       <h3 class="text-2xl mt-16 font-bold px-5 lg:text-3xl">
         نمونه کارها
       </h3>
@@ -139,8 +147,8 @@
           مشاهده همه نمونه کارها
         </button>
       </div>
-    </div>
-    <div class="blog-part mt-16 p-5 py-10 relative w-full overflow-x-hidden">
+    </div> -->
+    <!-- <div class="blog-part mt-16 p-5 py-10 relative w-full overflow-x-hidden">
       <img
         src="/img/group2.png"
         alt=""
@@ -170,8 +178,8 @@
           </button>
         </div>
       </div>
-    </div>
-    <div class="mt-16 p-5 py-10 relative w-full overflow-x-hidden">
+    </div> -->
+    <!-- <div class="mt-16 p-5 py-10 relative w-full overflow-x-hidden">
       <div class="container mx-auto">
         <h3 class="text-2xl font-bold px-5 lg:text-3xl">
           نظرات مشتریان
@@ -198,8 +206,8 @@
           <div class="swiper-pagination" slot="pagination"></div>
         </div>
       </div>
-    </div>
-    <div class="container mx-auto px-5">
+    </div> -->
+    <!-- <div class="container mx-auto px-5">
       <h3 class="text-2xl font-bold lg:text-3xl">
         ثبت سفارش
       </h3>
@@ -268,7 +276,7 @@
       >
         ارسال
       </button>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -311,7 +319,7 @@ export default {
   },
   async asyncData({ $axios }) {
     const { data } = await $axios.get("/Samples/");
-    console.log(data);
+    
     return {
       samples: data
     };
@@ -319,7 +327,7 @@ export default {
   mounted() {},
   methods: {
     sendDemand() {
-      console.log(this.description, this.PhoneNumber, this.workField);
+      
       if (!this.description || !this.PhoneNumber || !this.workField) {
         this.$swal({
           text: "لطفا تمام فیلدهای ستاره دار رو پر کنید",
@@ -334,7 +342,7 @@ export default {
             workField: this.workField
           })
           .then(res => {
-            console.log(res);
+            
             this.$swal({
               text:
                 "درخواست شما با موفقیت ثبت شد \nدر کوتاه ترین زمان با شما تماس میگیریم",
@@ -343,7 +351,7 @@ export default {
             this.description = this.PhoneNumber = this.workField = "";
           })
           .catch(err => {
-            console.log(err);
+            
             this.$swal({
               text: "مشکلی در سیستم به وجود آمده. لطفا بعدا دوباره امتحان کنید",
               icon: "error"
@@ -380,5 +388,16 @@ export default {
 }
 .blog-part {
   background-image: linear-gradient(to right, #28313b, #485461);
+}
+#group1 {
+  animation: slow-move 3s ease-in-out alternate infinite;
+}
+@keyframes slow-move {
+  from {
+    transform: translateY(-15px);
+  }
+  to {
+    transform: translateY(15px);
+  }
 }
 </style>

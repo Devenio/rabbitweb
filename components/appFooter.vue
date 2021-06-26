@@ -25,27 +25,53 @@
         <p class="opacity-75 mt-5">
           شما میتوانید با استفاده از یکی از راه‌های زیر با ما ارتباط برقرار کنید
         </p>
-        <p class="opacity-75 mt-3">
+        <p class="opacity-75 mt-3 hover:underline">
           <fa :icon="['fas', 'envelope']" class="mr-3" />
-          rabbitweb-support@gmail.com
+          <a href="mailto:contact@rabbitweb.ir">contact@rabbitweb.ir</a>
         </p>
-        <p class="opacity-75">
+        <p class="opacity-75 hover:underline">
           <fa :icon="['fab', 'telegram-plane']" class="mr-3" />
-          rabbit-web-support
+          <a href="https://t.me/rabbitwebir" target="_blank">@rabbitwebir</a>
         </p>
       </div>
     </div>
     <div class="w-full bg-gray-900 p-5 mt-10">
-      <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between text-white">
+      <div
+        class="container mx-auto flex flex-col lg:flex-row items-center justify-between text-white"
+      >
         <span class="opacity-50 text-center text-sm px-5 lg:px-0"
           >کليه حقوق محصولات و محتوای اين سایت متعلق به راکت می باشد و هر گونه
           کپی برداری از محتوا و محصولات سایت غیر مجاز و بدون رضایت ماست</span
         >
         <span class="opacity-50 text-sm mt-3 lg:mx-0 flex items-center">
-            <fa class="mx-2 text-xl" :icon="['fab', 'instagram']" />
+          <a
+            href="https://t.me/rabbitwebir"
+            target="_blank"
+            class="transform hover:scale-110 cursor-pointer"
+          >
             <fa class="mx-2 text-xl" :icon="['fab', 'telegram-plane']" />
-            <fa class="mx-2 text-xl" :icon="['fab', 'linkedin']" />
+          </a>
+          <a
+            href="https://instagram.com/rabbitweb.ir/"
+            target="_blank"
+            class="transform hover:scale-110 cursor-pointer"
+          >
+            <fa class="mx-2 text-xl" :icon="['fab', 'instagram']" />
+          </a>
+          <a
+            href="mailto:contact@rabbitweb.ir"
+            target="_blank"
+            class="transform hover:scale-110 cursor-pointer"
+          >
+            <fa :icon="['fas', 'envelope']" class="mx-2 text-xl" />
+          </a>
+          <a
+            href="tel:09019622899"
+            target="_blank"
+            class="transform hover:scale-110 cursor-pointer"
+          >
             <fa class="mx-2 text-xl" :icon="['fab', 'whatsapp']" />
+          </a>
         </span>
       </div>
     </div>

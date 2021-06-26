@@ -10,3 +10,17 @@
 .nuxt-link-exact-active {
   border: 1px solid #fff;
 }
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.3s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+.page-enter {
+  transform: translateX(50px);
+}
+.page-leave-to {
+  transform: translateX(-50px);
+}
