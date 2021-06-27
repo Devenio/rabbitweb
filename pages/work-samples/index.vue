@@ -12,6 +12,7 @@
       class="mt-10 flex flex-wrap items-center justify-center space-x-3 space-y-3 mb-16 w-full"
     >
       <work-samp
+        class="lg:w-[700px]"
         v-for="sample in samples"
         :key="sample.id"
         :name="sample.name"
@@ -26,7 +27,7 @@
 export default {
   async asyncData({ $axios }) {
     const { data } = await $axios.get("/Samples/");
-    
+
     return {
       samples: data
     };

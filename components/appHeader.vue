@@ -51,7 +51,7 @@
   <nav class="w-full bg-gray-800 text-white">
     <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
     <div
-      class="container relative z-20 px-6 py-4 mx-auto top-0 lg:flex lg:justify-between  lg:items-center"
+      class="container relative z-20 px-6 py-4 mx-auto top-0 lg:flex lg:flex-row-reverse lg:justify-between  lg:items-center"
     >
       <div class="flex items-center justify-between">
         <!-- Mobile menu button -->
@@ -75,7 +75,7 @@
       </div>
       <div
         :class="isOpen ? 'flex' : 'hidden'"
-        class="flex-col mt-2 space-y-4 lg:flex lg:space-y-0 lg:flex-row lg:items-center lg:mt-0"
+        class="flex-col-reverse mt-2 space-y-4 lg:flex lg:space-y-0 lg:flex-row-reverse lg:items-center lg:mt-0"
       >
         <nuxt-link
           to="/work-samples"

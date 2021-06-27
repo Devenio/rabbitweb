@@ -5,11 +5,11 @@
     >
       <div class="relative z-10">
         <h1 class="text-center text-2xl lg:text-5xl">
-          طراحی وبسایت خودتون رو به
-          <strong class="text-blue-600">ربیت وب</strong> بسپارید
+          جایگاهت با <strong class="text-blue-500">ربیت وب</strong> تو بازار آنلاین
+          پیدا کن!
         </h1>
-        <h3 class="hidden lg:block text-center opacity-75 text-xl mt-3">
-          لورم اپیسوم متن ساختگی در صنعت گرافیک برای نمایش متن
+        <h3 class=" text-center opacity-75 lg:text-xl mt-3">
+          طراحی انواع سایت های شرکتی، فروشگاهی و تخصصی ‎
         </h3>
         <div
           class="flex items-center w-full justify-center mt-5 lg:mt-10 relative z-50"
@@ -49,20 +49,21 @@
       id="q-box"
     >
       <div
-        class="flex items-center justify-center bg-blue-100 w-full py-5 lg:w-1/2 lg:h-full"
+        class="flex items-center justify-center bg-blue-100 w-full py-5 lg:w-1/3 lg:h-full"
       >
         <img src="/img/logo.png" alt="logo" class="w-[100px]" />
       </div>
-      <div class="p-5 text-center lg:text-right">
+      <div class="p-5 text-center lg:text-right lg:w-2/3">
         <h2 class="font-bold text-lg">
           چرا برای کسب و کار خود به یک وب سایت احتیاج دارید؟
         </h2>
         <p class="opacity-75 mt-3">
-          + طراحی وبسایت و وب اپلیکیشن ، بدون محدودیت ! <br />
-          + پیاده سازی قراردادهای هوشمند بر بستر شبکه های بلاکچین<br />
-          + تولید محتوا در زمینه های مختلف<br />
-          + بهینه سازی سئو بر اساس آخرین الگوریتم های گوگل<br />
-          + ...
+          81٪ از افراد قبل از تصمیم گیری در مورد خرید و فروش در یک کسب وکار یا
+          خدمات، در اینترنت تحقیق می کنند. داشتن وب سایت مشتریان جدیدی را از
+          سرتاسر کشور به سمت کسب و کار شما جذب می‌کند و باعث می‌شود درآمد بیشتری
+          کسب کنید. وب سایت بازگشت سرمایه بیشتری دارد و می تواند بسیار مقرون به
+          صرفه باشد چون هزینه وب سایت ها نسبت به هر نوع تبلیغات سنتی دیگر
+          پایینتر و نتیجه‌اش به مراتب بیشتر است
         </p>
         <nuxt-link
           to="/demand"
@@ -74,7 +75,7 @@
       </div>
     </div>
     <div
-      class="container mx-auto flex flex-col lg:flex-row-reverse items-center mt-16"
+      class="container mx-auto flex flex-col lg:flex-row-reverse lg:justify-evenly items-center mt-16"
     >
       <img src="/img/group1.svg" alt="" id="group1" class="px-5" />
       <div class="mt-10 lg:mt-0 text-center lg:text-right">
@@ -82,13 +83,11 @@
           چرا ربیت وب ؟
         </h1>
         <p class="opacity-75 mt-5 lg:px-0 px-5 leading-loose">
-          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
-          از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
-          سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
-          متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه
-          درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با
-          نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان
-          خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد
+          + طراحی وبسایت و وب اپلیکیشن ، بدون محدودیت ! <br />
+          + پیاده سازی قراردادهای هوشمند بر بستر شبکه های بلاکچین<br />
+          + تولید محتوای اختصاصی برای شبکه های اجتماعی<br />
+          + بهینه سازی سئو بر اساس آخرین الگوریتم های گوگل<br />
+          + ...
         </p>
         <nuxt-link to="/demand/">
           <button
@@ -100,6 +99,7 @@
       </div>
     </div>
     <div class="mt-16 bg-pic2 p-10">
+      <h1 class="text-center mb-5 text-3xl text-white">خدمات ربیت وب</h1>
       <div
         class="flex flex-col lg:flex-row lg:justify-center lg:w-[800px] mx-auto rounded-xl items-center relative z-10 text-white text-center overflow-hidden"
       >
@@ -107,13 +107,13 @@
           class="absolute top-0 right-0 w-full h-full glass bg-black opacity-75"
         ></div>
         <span class="text-2xl font-bold p-5 lg:mx-3">
-          تحویل در کوتاه ترین زمان
+          تحویل فوری
         </span>
         <div
           class="h-[1px] w-[100px] lg:h-[70px] lg:w-[1px] bg-white opacity-25"
         ></div>
         <span class="text-2xl font-bold p-5 lg:mx-3">
-          پشتیبانی به مدت دلخواه
+          پشتیبانی 24 ساعته
         </span>
         <div
           class="h-[1px] w-[100px] lg:h-[70px] lg:w-[1px] bg-white opacity-25"
@@ -319,7 +319,7 @@ export default {
   },
   async asyncData({ $axios }) {
     const { data } = await $axios.get("/Samples/");
-    
+
     return {
       samples: data
     };
@@ -327,7 +327,6 @@ export default {
   mounted() {},
   methods: {
     sendDemand() {
-      
       if (!this.description || !this.PhoneNumber || !this.workField) {
         this.$swal({
           text: "لطفا تمام فیلدهای ستاره دار رو پر کنید",
@@ -342,7 +341,6 @@ export default {
             workField: this.workField
           })
           .then(res => {
-            
             this.$swal({
               text:
                 "درخواست شما با موفقیت ثبت شد \nدر کوتاه ترین زمان با شما تماس میگیریم",
@@ -351,7 +349,6 @@ export default {
             this.description = this.PhoneNumber = this.workField = "";
           })
           .catch(err => {
-            
             this.$swal({
               text: "مشکلی در سیستم به وجود آمده. لطفا بعدا دوباره امتحان کنید",
               icon: "error"
@@ -370,7 +367,7 @@ export default {
   background-position: center;
 }
 .bg-pic2 {
-  background-image: linear-gradient(#00000090, #00000090), url("/img/bg2.jpg");
+  background-image: linear-gradient(#00000095, #00000095), url("/img/bg2.jpg");
   background-size: cover;
   background-position: center;
 }
