@@ -8,7 +8,11 @@ module.exports = {
     './**/*.vue'
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        main: "#000000"
+      }
+    },
   },
   variants: {},
   plugins: [],
