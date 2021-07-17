@@ -15,11 +15,11 @@
             alt=""
           />
           <div
-            class="text-center lg:text-right lg:w-1/2 text-dark lg:text-white flex flex-col space-y-10 px-5 mt-10 lg:mt-0"
+            class="text-center lg:text-right text-dark lg:text-white flex flex-col space-y-10 px-5 mt-10 lg:mt-0"
           >
             <div>
-              <h1 class="title text-2xl font-extralight lg:text-6xl">
-                جایگاهت رو با <strong class="text-blue-300">ربیت وب</strong> تو
+              <h1 class="title text-2xl font-extralight lg:text-4xl">
+                جایگاهت رو با <strong class="">ربیت وب</strong> تو
                 بازار آنلاین پیدا کن!
               </h1>
               <h3 class="opacity-75 lg:text-xl mt-3">
@@ -57,11 +57,12 @@
         صرفه باشد چون هزینه وب سایت ها نسبت به هر نوع تبلیغات سنتی دیگر پایینتر
         و نتیجه‌اش به مراتب بیشتر است
       </p>
+      <nuxt-link to="/" class="mt-10 px-5 py-2 bg-secondary text-white rounded-lg text-lg">ادامه مطلب</nuxt-link>
     </section>
     <!-- second question section -->
     <section class="container mx-auto mt-10 text-center">
       <div class="w-[100px] h-[2px] bg-main mx-auto mb-5"></div>
-      <h1 class="text-2xl font-bold">چرا ربیت وب ؟</h1>
+      <h1 class="text-2xl font-bold">خدمات ربیت وب</h1>
       <div class="w-full flex flex-wrap items-center justify-center mb-16">
         <div class="m-3 flex lg:w-1/5 flex-col items-center">
           <img class="w-[200px]" src="/img/group4.png" alt="" />
