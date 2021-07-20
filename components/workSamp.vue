@@ -1,16 +1,16 @@
 <template>
-  <div class="h-[300px] m-3 relative">
+  <div
+    class="h-[300px] m-3 relative w-[300px] text-center shadow-xl cursor-pointer transform hover:scale-105"
+  >
     <img
       src="/img/pro1.png"
       alt=""
       class="object-cover object-top w-full h-full"
     />
-    <div class="absolute w-full h-full bg-black opacity-50 top-0 right-0"></div>
-    <div
-      class="absolute w-full p-3 bg-black opacity-75 bottom-0 right-0 text-white"
-    >
-      <h3 class="text-lg inline-block">{{ name }}</h3>
-      <span class="inline-block opacity-50 text-sm">({{ desc }})</span>
+    <!-- <div class="absolute w-full h-full bg-black opacity-50 top-0 right-0"></div> -->
+    <div class="absolute w-full p-3 bg-black bottom-0 right-0 text-white">
+      <h3 class="text-lg hidden">{{ name }}</h3>
+      <span class="hidden opacity-50 text-sm">({{ desc }})</span>
       <a :href="link" target="_blank" rel="nofollow" class="block underline">
         {{ link }}
       </a>

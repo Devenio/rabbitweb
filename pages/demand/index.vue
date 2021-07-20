@@ -1,6 +1,7 @@
 <template>
-  <div class="py-10 px-5 container mx-auto">
-    <h1 class="text-2xl mt-5 lg:text-4xl text-center font-bold">
+  <div class="py-10 px-5 container mx-auto text-dark">
+    <img src="/img/group2.svg" class="px-5 mt-24 mx-auto max-w-[500px] w-full md:w-auto" alt="">
+    <h1 class="text-2xl mt-16 lg:text-4xl text-center font-bold">
       ثبت سفارش خودتون رو در
       <span class="text-blue-600">سریع ترین زمان</span> ممکن انجام دهید
     </h1>
@@ -141,7 +142,7 @@ export default {
   top: 0;
   right: 0;
   transform: rotate(3deg);
-  background-color: #0f5edd44;
+  @apply bg-secondary;
   z-index: -1;
   border-radius: 10px;
 }
@@ -153,7 +154,7 @@ export default {
   top: 0;
   right: 0;
   transform: rotate(-3deg);
-  background-color: #0f5edd85;
+  @apply bg-main;
   z-index: -1;
   border-radius: 10px;
 }

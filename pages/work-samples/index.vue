@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto px-5 pt-16 lg:px-0">
-    <!-- <img src="/img/group3.svg" class="mx-auto max-w-[350px] mb-5" alt=""> -->
+    <img src="/img/group3.svg" class="mx-auto w-full md:w-auto max-w-[500px] px-5 mt-24 mb-5" alt="">
     <h1 class="text-2xl lg:text-4xl text-center font-bold">
       به بخش نمونه کارهای <span class="text-blue-600">ربیت وب</span> خوش اومدید
     </h1>
@@ -12,7 +12,7 @@
       class="mt-10 flex flex-wrap items-center justify-center space-x-3 space-y-3 mb-16 w-full"
     >
       <work-samp
-        class="lg:w-[700px]"
+        class=""
         v-for="sample in samples"
         :key="sample.id"
         :name="sample.name"
