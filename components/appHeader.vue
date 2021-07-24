@@ -32,7 +32,7 @@
           <fa :icon="['fas', 'angle-left']" />
         </nuxt-link>
         <img
-          src="/img/rabbit-small.png"
+          src="/img/Rabbit-small.png"
           class="w-[70px] block lg:hidden"
           alt=""
         />
@@ -54,7 +54,7 @@
           صفحه اصلی
         </nuxt-link>
         <img
-          src="/img/rabbit-small.png"
+          src="/img/Rabbit-small.png"
           class="w-[70px] hidden lg:block ml-5"
           alt=""
         />
@@ -78,7 +78,7 @@
           />
         </div>
         <img
-          src="/img/rabbit-small.png"
+          src="/img/Rabbit-small.png"
           class="w-[150px] block lg:hidden"
           alt=""
         />
