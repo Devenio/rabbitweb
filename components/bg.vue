@@ -2,7 +2,7 @@
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
-    class="w-full lg:w-3/4"
+    class="w-3/4"
     style="z-index: -10"
     viewBox="0 0 1443.293 1057.948"
   >

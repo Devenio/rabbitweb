@@ -29,7 +29,7 @@
             <div>
               <nuxt-link
                 to="/work-samples"
-                class="py-2 px-5 rounded-sm lg:text-lg cursor-pointer bg-white text-main border-2 border-main lg:border-transparent"
+                class="py-2 px-5 lg:text-lg cursor-pointer rounded-lg bg-white text-main border-2 border-main lg:border-transparent"
               >
                 مشاهده نمونه کارها
               </nuxt-link>
@@ -91,7 +91,7 @@
       </div>
       <nuxt-link
         to="/demand"
-        class="px-5 py-2 rounded-sm text-white bg-secondary hover:bg-main"
+        class="px-5 py-2 rounded-lg text-white bg-secondary hover:bg-main"
         >چجوری سفارش بدم ؟</nuxt-link
       >
     </section>
