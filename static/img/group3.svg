@@ -6,7 +6,7 @@
     <circle id="Ellipse_45" data-name="Ellipse 45" cx="7.52" cy="7.52" r="7.52" transform="translate(158.669 330.885)" fill="#fff"/>
     <circle id="Ellipse_46" data-name="Ellipse 46" cx="7.52" cy="7.52" r="7.52" transform="translate(166.189 358.458)" fill="#fff"/>
     <rect id="Rectangle_21" data-name="Rectangle 21" width="156.513" height="26.086" transform="translate(168.438 180.04) rotate(-12.753)" fill="#f5f5f5"/>
-    <rect id="Rectangle_22" data-name="Rectangle 22" width="260.662" height="378.524" transform="translate(269.443 191.699) rotate(-12.753)" fill="#6c63ff"/>
+    <rect id="Rectangle_22" data-name="Rectangle 22" width="260.662" height="378.524" transform="translate(269.443 191.699) rotate(-12.753)" fill="#0e4f51"/>
     <rect id="Rectangle_23" data-name="Rectangle 23" width="260.662" height="378.524" transform="translate(537.543 131.023) rotate(-12.753)" fill="#3f3d56"/>
     <rect id="Rectangle_24" data-name="Rectangle 24" width="156.513" height="26.086" transform="translate(323.853 221.399) rotate(-12.753)" fill="#f5f5f5"/>
     <rect id="Rectangle_25" data-name="Rectangle 25" width="208.685" height="6.521" transform="translate(312.325 288.642) rotate(-12.753)" fill="#f5f5f5"/>
@@ -19,14 +19,14 @@
     <rect id="Rectangle_32" data-name="Rectangle 32" width="193.468" height="6.521" transform="translate(335.838 392.531) rotate(-12.753)" fill="#f5f5f5"/>
     <rect id="Rectangle_33" data-name="Rectangle 33" width="208.685" height="6.521" transform="translate(339.198 407.371) rotate(-12.753)" fill="#f5f5f5"/>
     <rect id="Rectangle_34" data-name="Rectangle 34" width="108.69" height="6.521" transform="translate(342.556 422.213) rotate(-12.753)" fill="#f5f5f5"/>
-    <rect id="Rectangle_35" data-name="Rectangle 35" width="115.211" height="6.521" transform="translate(622.017 376.795) rotate(-12.753)" fill="#6c63ff" opacity="0.3"/>
-    <rect id="Rectangle_36" data-name="Rectangle 36" width="208.685" height="6.521" transform="translate(625.375 391.636) rotate(-12.753)" fill="#6c63ff" opacity="0.3"/>
-    <rect id="Rectangle_37" data-name="Rectangle 37" width="208.685" height="6.521" transform="translate(628.734 406.477) rotate(-12.753)" fill="#6c63ff" opacity="0.3"/>
-    <rect id="Rectangle_38" data-name="Rectangle 38" width="193.468" height="6.521" transform="translate(632.094 421.319) rotate(-12.753)" fill="#6c63ff" opacity="0.3"/>
-    <rect id="Rectangle_39" data-name="Rectangle 39" width="208.685" height="6.521" transform="translate(635.452 436.159) rotate(-12.753)" fill="#6c63ff" opacity="0.3"/>
+    <rect id="Rectangle_35" data-name="Rectangle 35" width="115.211" height="6.521" transform="translate(622.017 376.795) rotate(-12.753)" fill="#0e4f51" opacity="0.3"/>
+    <rect id="Rectangle_36" data-name="Rectangle 36" width="208.685" height="6.521" transform="translate(625.375 391.636) rotate(-12.753)" fill="#0e4f51" opacity="0.3"/>
+    <rect id="Rectangle_37" data-name="Rectangle 37" width="208.685" height="6.521" transform="translate(628.734 406.477) rotate(-12.753)" fill="#0e4f51" opacity="0.3"/>
+    <rect id="Rectangle_38" data-name="Rectangle 38" width="193.468" height="6.521" transform="translate(632.094 421.319) rotate(-12.753)" fill="#0e4f51" opacity="0.3"/>
+    <rect id="Rectangle_39" data-name="Rectangle 39" width="208.685" height="6.521" transform="translate(635.452 436.159) rotate(-12.753)" fill="#0e4f51" opacity="0.3"/>
     <rect id="Rectangle_40" data-name="Rectangle 40" width="126.081" height="86.952" transform="translate(424.64 430.38) rotate(-12.753)" fill="#f5f5f5"/>
-    <rect id="Rectangle_41" data-name="Rectangle 41" width="126.081" height="86.952" transform="translate(570.194 147.816) rotate(-12.753)" fill="#6c63ff" opacity="0.3"/>
-    <rect id="Rectangle_42" data-name="Rectangle 42" width="126.081" height="86.952" transform="translate(690.553 236.472) rotate(-12.753)" fill="#6c63ff" opacity="0.3"/>
+    <rect id="Rectangle_41" data-name="Rectangle 41" width="126.081" height="86.952" transform="translate(570.194 147.816) rotate(-12.753)" fill="#0e4f51" opacity="0.3"/>
+    <rect id="Rectangle_42" data-name="Rectangle 42" width="126.081" height="86.952" transform="translate(690.553 236.472) rotate(-12.753)" fill="#0e4f51" opacity="0.3"/>
     <g id="Group_36" data-name="Group 36" transform="translate(223.844 639.567)" opacity="0.5">
       <rect id="Rectangle_43" data-name="Rectangle 43" width="3.76" height="21.307" transform="translate(8.773)" fill="#47e6b1"/>
       <rect id="Rectangle_44" data-name="Rectangle 44" width="3.76" height="21.307" transform="translate(21.307 8.774) rotate(90)" fill="#47e6b1"/>
@@ -47,7 +47,7 @@
     <circle id="Ellipse_48" data-name="Ellipse 48" cx="7.52" cy="7.52" r="7.52" transform="translate(395.553)" fill="#4d8af0" opacity="0.5"/>
     <circle id="Ellipse_49" data-name="Ellipse 49" cx="7.52" cy="7.52" r="7.52" transform="translate(573.778 566.436)" fill="#47e6b1" opacity="0.5"/>
     <circle id="Ellipse_50" data-name="Ellipse 50" cx="7.52" cy="7.52" r="7.52" transform="translate(1007.437 754.438)" fill="#f55f44" opacity="0.5"/>
-    <rect id="Rectangle_49" data-name="Rectangle 49" width="260.662" height="378.524" rx="13.435" transform="translate(633.182 218.607) rotate(-12.753)" fill="#6c63ff"/>
+    <rect id="Rectangle_49" data-name="Rectangle 49" width="260.662" height="378.524" rx="13.435" transform="translate(633.182 218.607) rotate(-12.753)" fill="#0e4f51"/>
     <circle id="Ellipse_51" data-name="Ellipse 51" cx="7.52" cy="7.52" r="7.52" transform="translate(651.236 260.697)" fill="#fff"/>
     <circle id="Ellipse_52" data-name="Ellipse 52" cx="7.52" cy="7.52" r="7.52" transform="translate(658.756 288.271)" fill="#fff"/>
     <circle id="Ellipse_53" data-name="Ellipse 53" cx="7.52" cy="7.52" r="7.52" transform="translate(707.637 490.06)" fill="#fff"/>

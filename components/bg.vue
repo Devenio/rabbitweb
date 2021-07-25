@@ -14,8 +14,8 @@
         y2="1"
         gradientUnits="objectBoundingBox"
       >
-        <stop offset="0" stop-color="#6c63ff" />
-        <stop offset="1" stop-color="#363280" />
+        <stop offset="0" stop-color="#0e4f51" />
+        <stop offset="1" stop-color="#298e8e" />
       </linearGradient>
     </defs>
     <g id="Group_3" data-name="Group 3" transform="translate(0.043 182)">

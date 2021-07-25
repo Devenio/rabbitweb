@@ -1,21 +1,21 @@
 <template>
   <div class="w-full">
     <!-- main section -->
-    <bg class="absolute top-0 right-0 " />
+    <bg class="absolute -top-1 right-0 " />
     <section class="w-full text-white">
       <div
         class="py-16 pt-24 lg:py-0 lg:h-screen container mx-auto flex justify-center items-center"
       >
         <div
-          class="flex flex-col lg:flex-row-reverse items-center lg:justify-evenly"
+          class="w-full flex flex-col lg:flex-row-reverse items-center lg:justify-between"
         >
           <img
-            src="/img/group3.png"
-            class="w-full px-5 max-w-[400px] lg:max-w-[500px] xl:w-[650px] xl:max-w-full"
+            src="/img/group5.svg"
+            class="w-full px-5 lg:px-0 max-w-[400px] lg:max-w-[500px] xl:w-[650px] xl:max-w-full"
             alt=""
           />
           <div
-            class="text-center lg:text-right text-dark lg:text-white flex flex-col space-y-10 px-5 mt-10 lg:mt-0"
+            class="text-center lg:text-right text-dark lg:text-white flex flex-col space-y-10 px-5 lg:px-0 mt-10 lg:mt-0"
           >
             <div>
               <h1 class="title text-2xl font-extralight lg:text-4xl">
@@ -49,7 +49,7 @@
       <h1 class="text-2xl mt-5 font-bold">
         چرا برای کسب و کار خودمون به یک وب سایت احتیاج داریم ؟
       </h1>
-      <p class="mt-5 opacity-75 ">
+      <p class="mt-5 opacity-75 max-w-[800px]">
         81٪ از افراد قبل از تصمیم گیری در مورد خرید و فروش در یک کسب وکار یا
         خدمات، در اینترنت تحقیق می کنند. داشتن وب سایت مشتریان جدیدی را از
         سرتاسر کشور به سمت کسب و کار شما جذب می‌کند و باعث می‌شود درآمد بیشتری
@@ -57,7 +57,7 @@
         صرفه باشد چون هزینه وب سایت ها نسبت به هر نوع تبلیغات سنتی دیگر پایینتر
         و نتیجه‌اش به مراتب بیشتر است
       </p>
-      <nuxt-link to="/" class="mt-10 px-5 py-2 bg-secondary text-white rounded-lg text-lg">ادامه مطلب</nuxt-link>
+      <nuxt-link to="/" class="mt-10 px-5 py-2 bg-secondary hover:bg-main text-white rounded-lg">ادامه مطلب</nuxt-link>
     </section>
     <!-- second question section -->
     <section class="container mx-auto mt-10 text-center">
@@ -142,7 +142,9 @@ export default {
       samples: data
     };
   },
-  mounted() {},
+  mounted() {
+    console.log(this.$route, this.$router);
+  },
   methods: {
     sendDemand() {
       if (!this.description || !this.PhoneNumber || !this.workField) {

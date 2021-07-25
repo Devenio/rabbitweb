@@ -2,7 +2,7 @@
   <nav
     id="header"
     :class="$route.path !== '/' ? 'bg-main' : ''"
-    class="w-full text-white fixed top-0 z-50"
+    class="w-full text-white fixed top-0 z-50 transition-all duration-300"
   >
     <div
       class="container relative z-20 px-6 lg:px-0 py-4 mx-auto top-0 lg:flex lg:flex-row-reverse lg:justify-between  lg:items-center"
@@ -135,10 +135,6 @@ export default {
   width: 40px;
 }
 .scroll-pos {
-  /* background-color: #323336; */
-  @apply shadow-xl;
-}
-.scroll-pos {
-  @apply bg-main;
+  @apply bg-white shadow-xl text-dark;
 }
 </style>

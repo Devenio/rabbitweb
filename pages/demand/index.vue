@@ -3,7 +3,7 @@
     <img src="/img/group2.svg" class="px-5 mt-24 mx-auto max-w-[500px] w-full md:w-auto" alt="">
     <h1 class="text-2xl mt-16 lg:text-4xl text-center font-bold">
       ثبت سفارش خودتون رو در
-      <span class="text-blue-600">سریع ترین زمان</span> ممکن انجام دهید
+      <span class="text-secondary">سریع ترین زمان</span> ممکن انجام دهید
     </h1>
     <h5 class="mt-3 text-base lg:text-lg opacity-75 text-center">
       برای ثبت سفارش کافیه اطلاعات لازم رو برای ما ارسال کنید و ما در سریع ترین
@@ -70,7 +70,7 @@
       </div>
       <button
         @click="sendDemand()"
-        class="w-full mt-6 py-2 rounded hover:bg-blue-700 bg-blue-500 text-gray-100 focus:outline-none"
+        class="w-full mt-6 py-2 rounded hover:bg-main bg-secondary text-gray-100 focus:outline-none"
       >
         ارسال
       </button>

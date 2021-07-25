@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="w-full bg-gray-800  lg:px-0 pt-10 mt-10 bg-gradient-to-tl from-main to-blue-900 relative"
+    class="w-full bg-gray-800  lg:px-0 pt-10 mt-10 bg-gradient-to-tl from-main to-secondary relative"
   >
     <div
       class="w-[50px] h-[50px] rounded-full bg-white cursor-pointer flex items-center justify-center mx-auto absolute -top-5 right-1/2 transform translate-x-1/2"
